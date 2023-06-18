@@ -13,7 +13,7 @@ export default class TableHeaderInfo extends Component {
     return (
       <div className={styles.headerInfo}>
         <h2 className={styles.title}>{this.title}</h2>
-        <p>{this.description}</p>
+        {!!this.description && <p>{this.description}</p>}
       </div>
     );
   }

@@ -1,8 +1,6 @@
 import { Component } from "react";
 import "./App.css";
-import Table from "./components/Table/Table";
-import Club from "./components/Club/Club";
-import TableHeaderInfo from "./components/data-display/TableHeaderInfo/TableHeaderInfo";
+import TableHeader from "./components/data-display/TableHeader/TableHeader";
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TableHeaderInfo
+        <TableHeader
+          src="https://banner2.cleanpng.com/20180711/vg/kisspng-201617-premier-league-english-football-league-l-lion-emoji-5b460f06eeac18.5589169115313180229776.jpg"
           title="Premier League"
           description="Season 2020-2021"
         />
